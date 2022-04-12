@@ -4,65 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Работник</title>
+    <script src="/js/script.js"defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Work</title>
 </head>
 <body>
-   <form action="#" class="form-container"></form>
-<div class="container">
-    <table class="table">
-        <tr class="string">
-            <td class="table-Block">Имя</td>
-            <td class="table-Block">Фамилия</td>
-            <td class="table-Block">Есть дети?</td>
-            <td class="table-Block">Организация</td>
-            <td class="table-Block">Разряд</td>
-            <td class="table-Block">Дата принятия на работу</td>
-        </tr>
-        <tr class="string">
-            <td class="table-Block"></td>
-            <td class="table-Block"></td>
-            <td class="table-Block"></td>
-            <td class="table-Block"></td>
-            <td class="table-Block"></td>
-            <td class="table-Block"></td>
-        </tr>
-    </table>
-    <div class='input-container 1'>
-        <input type="text" id="text" class="input-container"></input>
-        <label for="text" class="input-container-label">Имя</label>
-    </div>
-<div class='input-container 2'>
-        <input type="text" id="text" class="input-container"></input>
-        <label for="text" class="input-container-label">Фамилия</label>
-    </div>
-    <div class='input-container 3'>
-        <input type="text" id="text" class="input-container"></input>
-        <label for="Form-text" class="input-container-label">Возраст</label>
-    </div>
-    <div class='input-container 4'>
-        <input type="text" id="text" class="input-container"></input>
-        <label for="text" class="input-container-label">Наличие детей</label>
+    
+    <div class="container-name">
+        <form action="#" class="form-container">
+        <div class="inputs-string">
+            <div class="iputs-string__top">
+                <div class="input-container">
+                    <label for="form-text__name" class="label__name">Имя</label>
+                    <input type="text" class="input__form" id="form-text__name">
+                </div>
+                <div class="input-container">
+                    <label for="form-text__secname" class="label__secname">Фамилия</label>
+                    <input type="text" class="input__form" id="form-text__secname">
+                </div>
+                <div class="input-container">
+                    <label for="form-text__age" class="label__age">Возраст</label>
+                    <input type="text" class="input__form" id="form-text__age">
+                </div>
+                <div class="input-container">
+                    <label for="form-text__work" class="label__work">Должность</label>
+                    <select class="input-container__select" name="role-select">
+                        <option value=""selected></option>
+                        <option value="Механик">Механик</option>
+                        <option value="Водитель">Водитель</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="inputs-string__bottom">
+                <div class="input-container">
+                    <label for="form-text__role" class="label__role">Организация</label>
+                    <input type="text" class="input__form" id="form-text__role">
+                </div>
+                <div class="input-container">
+                    <label for="form-text__runk" class="label__runk">Разряд</label>
+                    <input type="text" class="input__form" id="form-text__runk">
+                </div>
+                <div class="input-container">
+                    <label for="form-text__date" class="label__date">Дата принятия на работу</label>
+                    <input type="date" class="input__form" id="form-text__date">
+                </div>
+                <div class="input-container">
+                    <label for="form-text__child" class="label__child">Наличие детей</label>
+                    <input type="checkbox" class="input__form" id="form-text__child">
+                </div>
+            </div>
+
+            <div class="button-block">
+                <button type="submit" class="button">Сохранить</button>
+            </div>
+        </div>
+        </form>
     </div>
 
-    <div class="container">
-        <div class="input-container">
-            <select name="input-container-select">
-                <option value="Должность" selected>Слесарь</option>
-                <option value="Водитель" selected>Водитель</option>
-                <option value="Должность" selected>Должность</option>
-            </select>
-        </div>
-        <div class='input-container'>
-            <input type="text" id="Form text" class="input-container-input"></input>
-            <label for="Form-text" class="input-container-label">Организация</label>
-        </div>
-        <div class='input-container'>
-            <input type="text" id="text" class="input-container-input"></input>
-            <label for="text" class="input-container-label">Разряд</label>
-        </div>
-        
+    <div class="container-name">
+        <table class="table">
+            <tr class="string">
+                <td class="tableBlock">Имя</td>
+                <td class="tableBlock">Фамилия</td>
+                <td class="tableBlock">Есть дети?</td>
+                <td class="tableBlock">Организация</td>
+                <td class="tableBlock">Разряд</td>
+                <td class="tableBlock">Дата принятия на работу</td>
+            </tr>
+
+            <tr class="string">
+                <td class="tableBlock"></td>
+                <td class="tableBlock"></td>
+                <td class="tableBlock"></td>
+                <td class="tableBlock"></td>
+                <td class="tableBlock"></td>
+                <td class="tableBlock"></td>
+            </tr>
+        </table>
     </div>
-</div>
-    </form>
 </body>
+</html>
